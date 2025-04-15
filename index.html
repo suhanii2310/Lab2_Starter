@@ -80,34 +80,42 @@
         <h2>Feedback Form</h2>
         <form>
           <fieldset>
-            <legend>Your Thoughts on Panda Conservation</legend>
-      
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required /><br />
-      
-            <label for="day">Preferred Meeting Day:</label>
-            <input type="date" id="day" name="day" /><br />
-      
-            <label for="interest" id="interest">Topics</label>
-            <input type="checkbox" id="design" name="interest" value="Conservation" />
-            <label for="design">Conservation Efforts</label>
-            <input type="checkbox" id="research" name="interest" value="Research" />
-            <label for="research">Panda Research</label><br />
-      
-            <label for="priority" id="priority">Meeting</label>
-            <input type="radio" name="priority" value="High" /> High
-            <input type="radio" name="priority" value="Low" /> Low<br />
-      
-            <label for="comments">Additional Comments:</label><br />
-            <textarea id="comments" name="comments"></textarea><br />
-      
-            <label for="tool">Preferred Tool:</label>
-            <select id="tool" name="tool">
-              <option value="zoom">Zoom</option>
-              <option value="meet">Google Meet</option>
-            </select><br />
-      
-            <button type="submit">Submit</button>
+                <legend>Meeting Feedback</legend>
+        
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+        
+                <label for="subscribe">Subscribe to newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+                <label>Preferred meeting time:</label><br>
+                <input type="radio" id="morning" name="meeting_time" value="morning">
+                <label for="morning">Morning</label><br>
+                <input type="radio" id="afternoon" name="meeting_time" value="afternoon">
+                <label for="afternoon">Afternoon</label><br><br>
+
+                <label for="meeting_date">Meeting Date:</label>
+                <input type="date" id="meeting_date" name="meeting_date"><br><br>
+
+                <label for="feedback">Your Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+                <label for="topics">Select meeting topic:</label>
+                <input list="topics" id="topic" name="topic">
+                <datalist id="topics">
+                    <option value="Panda Conservation">
+                    <option value="Panda Research">
+                </datalist><br><br>
+
+                <label for="priority">Meeting Priority:</label>
+                <select id="priority" name="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select><br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
           </fieldset>
         </form>
     </section>
