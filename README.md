@@ -1,3 +1,3 @@
 # Lab 2 - Starter
 
-[Link to user page]()
+[Link](https://suhanii2310.github.io/Lab2_Starter/)
